@@ -83,6 +83,6 @@ stages:
             - task: AzureWebApp@1
               displayName: 'Azure App Service Deploy: website'
               inputs:
-                azureSubscription: 'Nordcloud Training - Talent Acceleration Program'
+                azureSubscription: 'lab-spn'
                 appName: '$(WebAppName)'
                 package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
